@@ -1,4 +1,4 @@
-const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzWtKAWn6ymYoYB2K994mnxKojN0kSHC3PPsa7K_hhOlUBFGWINh7sN0AhZBfJl95-lZg/exec"; // your URL
+const WEB_APP_URL = https://script.google.com/macros/s/AKfycbzWtKAWn6ymYoYB2K994mnxKojN0kSHC3PPsa7K_hhOlUBFGWINh7sN0AhZBfJl95-lZg/exec; // Step 2 URL
 
 document.getElementById("uploadForm").addEventListener("submit", function(e){
   e.preventDefault();
@@ -27,5 +27,4 @@ document.getElementById("uploadForm").addEventListener("submit", function(e){
       console.error(err);
     });
 });
-
 
