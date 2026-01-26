@@ -1,5 +1,1 @@
-document.getElementById("uploadForm").addEventListener("submit", function(e){
- e.preventDefault();
- document.getElementById("msg").innerText =
- "✅ Submission received! (In real system, file + data stored)";
-});
+https://script.google.com/macros/s/AKfycby-_jzk-vcL1kNalY6uBpxb68cYcxq46v6YQjlKs-1G8Unt1jYkiIHMdieoBdDExHeW3A/exec
