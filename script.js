@@ -1,3 +1,4 @@
+alert("NEW SCRIPT LOADED");
 const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzWtKAWn6ymYoYB2K994mnxKojN0kSHC3PPsa7K_hhOlUBFGWINh7sN0AhZBfJl95-lZg/exec";
 
 document.getElementById("uploadForm").addEventListener("submit", async function(e){
