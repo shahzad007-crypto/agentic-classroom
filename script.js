@@ -21,9 +21,13 @@ document.getElementById("uploadForm").addEventListener("submit", async function(
 
     const response = await fetch(WEB_APP_URL, {
       method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
       body: JSON.stringify({
         studentName: studentName,
         studentId: studentId,
+        skill: document.getElementById("skill").value,
         fileData: base64Data,
         fileName: file.name
       })
