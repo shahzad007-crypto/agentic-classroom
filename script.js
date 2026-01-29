@@ -1,9 +1,9 @@
-
 const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzWtKAWn6ymYoYB2K994mnxKojN0kSHC3PPsa7K_hhOlUBFGWINh7sN0AhZBfJl95-lZg/exec";
 
 document.getElementById("uploadForm").addEventListener("submit", async function(e){
   e.preventDefault();
 
+  const studentName = document.getElementById("studentName").value;
   const studentId = document.getElementById("studentId").value;
   const file = document.getElementById("fileInput").files[0];
   const message = document.getElementById("message");
@@ -13,7 +13,7 @@ document.getElementById("uploadForm").addEventListener("submit", async function(
     return;
   }
 
-  message.innerHTML = "Uploading... Please wait.";
+  message.innerHTML = "Uploading...";
 
   const reader = new FileReader();
   reader.onload = async function(){
@@ -22,6 +22,7 @@ document.getElementById("uploadForm").addEventListener("submit", async function(
     const response = await fetch(WEB_APP_URL, {
       method: "POST",
       body: JSON.stringify({
+        studentName: studentName,
         studentId: studentId,
         fileData: base64Data,
         fileName: file.name
