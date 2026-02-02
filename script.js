@@ -1,4 +1,4 @@
-const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxCqdqr9KbBam0kT-H09q4HaLd5shXRkyqOX3u5iE77_nkIcZr951lL3Fkg0-PMLPdTiA/exec";
+const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbweWrIHVMs-4xJlgPrKXPjIDF2kfmUvDvGnbqdoxYWVGXzDYrxbWlDWJkPUkdBhRIkz/exec";
 
 document.getElementById("uploadForm").addEventListener("submit", async function(e){
   e.preventDefault();
